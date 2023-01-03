@@ -20,7 +20,7 @@ const Home = () => {
           </ul>
         </div>
         <div className="login">
-          <button>login</button>
+          <button className='header-btn'>Login</button>
         </div>
       </div>
     {/* header section end */}
