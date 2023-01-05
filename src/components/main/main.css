@@ -1,3 +1,9 @@
+.main-container{
+  max-width: 1154px;
+  height: 400px;
+  margin: 0 auto;
+}
+
 .paper-input{
   width: 20px;
   height: 20px;

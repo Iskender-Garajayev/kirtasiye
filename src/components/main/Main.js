@@ -3,7 +3,7 @@ import './main.css'
 
 const Main = () => {
   return (
-    <div>
+    <div className='main-container'>
       <form action="">
         <div className='paper-type'>
         <input className='paper-input' type="radio" name="Paper-type" id="1" />
@@ -17,7 +17,7 @@ const Main = () => {
         </div>
         
         <div className="paper-color">
-          <div className="color-bw">Black Whigth</div>
+          <div className="color-bw">B/W</div>
           <div className="color-color">Color</div>
         </div>      
       </form>
