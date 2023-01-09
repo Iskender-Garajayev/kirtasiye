@@ -26,6 +26,13 @@
     height: 40px;
     border: none;
     border-radius: 20px;
+    color: grey;
+    background-color: aqua;
+    font-weight: 700;
+}
+
+.logo span{
+    color: aliceblue;
 }
 
 
