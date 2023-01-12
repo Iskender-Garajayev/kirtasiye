@@ -1,9 +1,9 @@
 import React from 'react'
-import './home.css'
+import './header.css'
 import { FontAwesomeIcon,} from '@fortawesome/react-fontawesome'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 
-const Home = () => {
+const Header = () => {
   return (
     <>
     {/* header section start */}
@@ -38,4 +38,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Header
