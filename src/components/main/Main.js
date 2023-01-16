@@ -10,7 +10,8 @@ const Main = () => {
     setForm({...form, [e.target.name]: e.target.value})
   }
 
-  const onSubmite = () =>{
+  const onSubmite = (e) =>{
+    e.preventDefault();
     console.log(form);
   }
 
@@ -20,12 +21,12 @@ const Main = () => {
         <div className='paper-type'>
         <input className='paper-input' type="radio" name="paper_type" onChangeForm={onChangeForm} value="a4" id="1" />
         <label htmlFor="1">A4</label>
-
+{/* 
         <input type="radio" name="paper_type" onChangeForm={onChangeForm} value="A5" id="2" />
         <label htmlFor="2">A5</label>
 
         <input type="radio" name="paper_type" onChangeForm={onChangeForm} value="A3" id="3" />
-        <label htmlFor="3">A3</label>
+        <label htmlFor="3">A3</label> */}
         </div>
         
         <div className="paper-color">
