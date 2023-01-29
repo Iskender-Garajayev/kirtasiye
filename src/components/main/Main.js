@@ -4,7 +4,7 @@ import './main.css'
 
 const Main = () => {
 
-  const [form, setForm] = useState({paper_type:"" })
+  const [form, setForm] = useState({paper_type:"", input_box:"" })
 
   const onChangeForm = (e) =>{
     setForm({...form, [e.target.name]: e.target.value})
@@ -18,31 +18,30 @@ const Main = () => {
   return (
     <div className='main-container'>
       <form action="" onClick={onSubmite} >
-
-        <div>
-          <input type="radio" name="paper_type" id="1" value='A3' onChange={onChangeForm} />
-          <label htmlFor="1">A3</label>
-
-          <input type="radio" name="paper_type" id="2" value='A4' onChange={onChangeForm}/>
-          <label htmlFor="2">A4</label>
-
-        </div>
-        {/* <div>
-          <input type="radio" name="paper" id="a3"  />
-          <label htmlFor="a3">a3</label>
-
-          <input type="radio" name="paper" id="a4" checked/>
-          <label htmlFor="a4">a4</label>
-        </div> */}
-        
+       
+      <div>
+        <input type="radio" name="paper_type" value="A3" id="qwer0" onChange={onChangeForm} />name
+        <input type="radio" name="paper_type" value="A4" id="qwer1" onChange={onChangeForm} />surname
+        <input type="radio" name="paper_type" value="A5" id="qwer2" onChange={onChangeForm} />qwer
+    </div>
         <div className="paper-color">
           <div className="color-bw">B/W</div>
           <div className="color-color">Color</div>
         </div>      
+        <div>
+          <input type="text" name='input_box' onChange={onChangeForm} />
+        </div>
         <div className="btn">
           <button>Submite</button>
         </div>
       </form>
+
+
+      {/* incomein box  */}
+
+      <div>
+ 
+      </div>
     </div>
   )
 }
