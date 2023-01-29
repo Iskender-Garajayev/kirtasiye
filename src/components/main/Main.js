@@ -18,16 +18,22 @@ const Main = () => {
   return (
     <div className='main-container'>
       <form action="" onClick={onSubmite} >
-        <div className='paper-type'>
-        <input className='paper-input' type="radio" name="paper_type" onChangeForm={onChangeForm} value="a4" id="1" />
-        <label htmlFor="1">A4</label>
-{/* 
-        <input type="radio" name="paper_type" onChangeForm={onChangeForm} value="A5" id="2" />
-        <label htmlFor="2">A5</label>
 
-        <input type="radio" name="paper_type" onChangeForm={onChangeForm} value="A3" id="3" />
-        <label htmlFor="3">A3</label> */}
+        <div>
+          <input type="radio" name="paper_type" id="1" value='A3' onChange={onChangeForm} />
+          <label htmlFor="1">A3</label>
+
+          <input type="radio" name="paper_type" id="2" value='A4' onChange={onChangeForm}/>
+          <label htmlFor="2">A4</label>
+
         </div>
+        {/* <div>
+          <input type="radio" name="paper" id="a3"  />
+          <label htmlFor="a3">a3</label>
+
+          <input type="radio" name="paper" id="a4" checked/>
+          <label htmlFor="a4">a4</label>
+        </div> */}
         
         <div className="paper-color">
           <div className="color-bw">B/W</div>
