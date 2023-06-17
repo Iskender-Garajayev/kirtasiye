@@ -1,49 +1,69 @@
-import React, { useState } from 'react'
-import './main.css'
+import React, { useState } from "react";
+import "./main.css";
 // import Data from '../Data'
 
 const Main = () => {
+  const [form, setForm] = useState({ paper_type: "", input_box: "" });
 
-  const [form, setForm] = useState({paper_type:"", input_box:"" })
+  const onChangeForm = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
 
-  const onChangeForm = (e) =>{
-    setForm({...form, [e.target.name]: e.target.value})
-  }
-
-  const onSubmite = (e) =>{
+  const onSubmite = (e) => {
     e.preventDefault();
     console.log(form);
-  }
+  };
 
   return (
-    <div className='main-container'>
-      <form action="" onClick={onSubmite} >
-       
-      <div>
-        <input type="radio" name="paper_type" value="A3" id="qwer0" onChange={onChangeForm} />name
-        <input type="radio" name="paper_type" value="A4" id="qwer1" onChange={onChangeForm} />surname
-        <input type="radio" name="paper_type" value="A5" id="qwer2" onChange={onChangeForm} />qwer
-    </div>
+    <div className="main-container flex justify-between">
+      <div className=" w-[48%] bg-slate-700">
+      <form action="" onClick={onSubmite}>
+        <div>
+          <input
+            type="radio"
+            name="paper_type"
+            value="A3"
+            id="qwer0"
+            onChange={onChangeForm}
+          />
+          name
+          <input
+            type="radio"
+            name="paper_type"
+            value="A4"
+            id="qwer1"
+            onChange={onChangeForm}
+          />
+          surname
+          <input
+            type="radio"
+            name="paper_type"
+            value="A5"
+            id="qwer2"
+            onChange={onChangeForm}
+          />
+          qwer
+        </div>
         <div className="paper-color">
           <div className="color-bw">B/W</div>
           <div className="color-color">Color</div>
-        </div>      
+        </div>
         <div>
-          <input type="text" name='input_box' onChange={onChangeForm} />
+          <input type="text" name="input_box" onChange={onChangeForm} />
         </div>
         <div className="btn">
           <button>Submite</button>
         </div>
       </form>
-
+      </div>
 
       {/* incomein box  */}
 
-      <div>
- 
+      <div className=" w-[48%] bg-gray-600">
+
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;

@@ -7,10 +7,10 @@ const Header = () => {
   return (
     <>
       {/* header section start */}
-      <div className="header-container bg-[#9BCDD2]">
+      <div className="header-container flex justify-between items-center bg-[#9BCDD2]">
         <div className="header">
           <div className="logo">
-            <span>
+            <span className=" font-bold">
               Kirtasiye <FontAwesomeIcon icon={faCartShopping} />
             </span>
           </div>
