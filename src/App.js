@@ -6,7 +6,7 @@ import Header from './components/home/Header';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-[#FAF0E4]">
       <Header/>
       <Main/>
       <Contacts/>

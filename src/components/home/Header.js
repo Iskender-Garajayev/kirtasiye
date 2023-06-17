@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <>
       {/* header section start */}
-      <div className="header-container">
+      <div className="header-container bg-[#9BCDD2]">
         <div className="header">
           <div className="logo">
             <span>
@@ -27,13 +27,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-      {/* header section end */}
-
-      {/* main section start */}
-
-      <div className="home">Home</div>
-
-      {/* main section end */}
     </>
   );
 };

@@ -3,8 +3,8 @@ import './footer.css'
 
 const Footer = () => {
   return (
-    <div className='footer-container h-[300px] bg-slate-600'>
-      <div>
+    <div className=' h-auto bg-slate-600'>
+      <div className='footer-container'>
         <ul>
           <li>New Order</li>
           <li>Price of copy</li>
